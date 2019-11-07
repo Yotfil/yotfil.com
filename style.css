@@ -1,13 +1,18 @@
+/* include normalize and reset css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background: #f5ecc1;
+}
+.cont-top-prefession {
+    display: flex;
 }
 .bg-top {
-    color: #ffffff;
+    color: white;
     background: #010313;
     width: 100%;
     display: flex;
@@ -26,13 +31,13 @@ body {
 .profession,
 .sub,
 .ability,
-.company,
+.sub-text,
 .position,
 .name,
 .reference-type,
 .boss-name,
 .title {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 .profession,
 .name,
@@ -48,7 +53,6 @@ body {
     font-size: 1.3rem;
 }
 .bg-bottom {
-    background: #f5ecc1;
     width: 100%;
     padding: 30px 0;
     color: #010313;
@@ -67,14 +71,105 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+.ability1 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 74%,
+        rgba(1, 3, 19, 0) 95%
+    );
+    border-top: 1px solid #010313;
+}
+.ability2 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 62%,
+        rgba(1, 3, 19, 0) 85%
+    );
+    border-top: 1px solid #010313;
+}
+.ability3 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 32%,
+        rgba(1, 3, 19, 0) 75%
+    );
+    border-top: 1px solid #010313;
+}
+.ability4 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 52%,
+        rgba(1, 3, 19, 0) 80%
+    );
+    border-top: 1px solid #010313;
+}
+.ability5 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 82%,
+        rgba(1, 3, 19, 0) 95%
+    );
+    border-top: 1px solid #010313;
+}
+.ability6 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 72%,
+        rgba(1, 3, 19, 0) 95%
+    );
+    border-top: 1px solid #010313;
+}
+.ability7 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 52%,
+        rgba(1, 3, 19, 0) 70%
+    );
+    border-top: 1px solid #010313;
+}
+.ability8 {
+    width: 11.5rem;
+    height: 1.1rem;
+    background: linear-gradient(
+        to right,
+        rgba(1, 3, 19, 1) 0%,
+        rgba(1, 3, 19, 1) 62%,
+        rgba(1, 3, 19, 0) 85%
+    );
+    border-top: 1px solid #010313;
+}
 .ability {
-    width: 57%;
     width: 47%;
     display: flex;
     flex-direction: column;
     margin: 3% 1% 0 2%;
 }
-.company {
+.sub-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.position {
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -82,7 +177,8 @@ body {
     margin-bottom: 5px;
     text-align: center;
 }
-.jumbo {
+/* this class should be for the whole container */
+.companies {
     margin-bottom: 30px;
 }
 .reference-type {
@@ -122,6 +218,7 @@ body {
 }
 .txt-about-me {
     text-align: center;
+    /* empty property? */
     padding: ;
     padding-left: 3%;
     padding-right: 4%;
@@ -161,18 +258,15 @@ body {
 }
 .img-contact {
     width: 30px;
+    margin-right: 5px;
 }
-.num-cel,
-.txt-mail {
+.cel-mail {
     color: #010313;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-}
-.num-cel > p,
-.txt-mail > p {
-    order: 2;
     margin-left: 10px;
 }
 @media screen and (min-width: 600px) {
@@ -184,6 +278,10 @@ body {
     }
     .name-reference {
         padding-left: 12%;
+        display: inline-flex;
+        width: 49%;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .cel-mail {
         justify-content: center;
@@ -194,6 +292,12 @@ body {
     .right {
         width: 50%;
     }
+    .left {
+        padding-left: 5%;
+    }
+    .right {
+        padding-right: 5%;
+    }
     .bg-bottom {
         display: flex;
         flex-wrap: wrap;
@@ -201,10 +305,17 @@ body {
     }
     .contact-footer {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
     }
     .bg-top {
         padding: 40px 5%;
+    }
+    .column {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
