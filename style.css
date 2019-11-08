@@ -56,9 +56,29 @@ body {
     width: 100%;
     padding: 30px 0;
     color: #010313;
+    display: flex;
+    flex-direction: column;
 }
 .cont-abilities {
     margin-bottom: 30px;
+}
+.col1 {
+    order: 1;
+}
+.col2 {
+    order: 3;
+}
+.col3 {
+    order: 2;
+}
+.col4 {
+    order: 4;
+}
+.col5 {
+    order: 5;
+}
+.col6 {
+    order: 6;
 }
 .sub {
     text-align: center;
@@ -70,6 +90,7 @@ body {
 .abilities {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 .ability1 {
     width: 11.5rem;
@@ -177,7 +198,13 @@ body {
     margin-bottom: 5px;
     text-align: center;
 }
-/* this class should be for the whole container */
+.reference {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .companies {
     margin-bottom: 30px;
 }
@@ -271,20 +298,26 @@ body {
 }
 @media screen and (min-width: 600px) {
     .cont-company {
-        width: 33%;
+        width: 30%;
     }
     .companies {
         display: flex;
+        justify-content: space-between;
     }
     .name-reference {
-        padding-left: 12%;
+        padding-left: 10%;
         display: inline-flex;
         width: 49%;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
     .cel-mail {
         justify-content: center;
+    }
+    .reference {
+        margin-bottom: 30px;
+        display: block;
+        text-align: left;
     }
 }
 @media screen and (min-width: 769px) {
@@ -317,5 +350,19 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .name-reference {
+        padding-left: 3%;
+    }
+    .bg-bottom {
+        flex-direction: row;
+    }
+    .col1,
+    .col2,
+    .col3,
+    .col4,
+    .col5,
+    .col6 {
+        order: 1;
     }
 }
