@@ -13,7 +13,7 @@ export default function Home() {
         priority
       />
       <h1 className={styles.title}>
-        In the development stage, <br /> it will be here soon.
+        In the development stage, <br /> it will be here soon. this is a test.
       </h1>
     </main>
   )
