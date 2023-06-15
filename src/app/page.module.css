@@ -1,7 +1,8 @@
 .main {
   width: 100vw;
   height: 100vh;
-  background-color: #100022;
+  background: rgb(54, 0, 105);
+  background: radial-gradient(circle, rgba(54, 0, 105, 1) 0%, rgba(8, 0, 70, 1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +11,8 @@
 
 .title {
   margin-top: 60px;
-  font-family: 'Mukta', sans-serif;
   font-weight: 200;
   letter-spacing: 2px;
   color: #dda300;
+  text-align: center;
 }

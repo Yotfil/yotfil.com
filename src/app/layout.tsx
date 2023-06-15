@@ -1,8 +1,8 @@
 import './globals.css'
-import { Mukta } from 'next/font/google'
+import { Dosis } from 'next/font/google'
 
-const mukta = Mukta({
-  weight: ['200', '400', '500', '600', '700'],
+const dosis = Dosis({
+  weight: ['200', '400', '600'],
   subsets: ['latin'],
 })
 
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={mukta.className}>{children}</body>
+      <body className={dosis.className}>{children}</body>
     </html>
   )
 }

@@ -12,7 +12,9 @@ export default function Home() {
         height={100}
         priority
       />
-      <h1 className={styles.title}>Yotfil is working in something amazing for you. Wait it!</h1>
+      <h1 className={styles.title}>
+        In the development stage, <br /> it will be here soon.
+      </h1>
     </main>
   )
 }
